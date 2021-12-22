@@ -20,7 +20,7 @@ In the Contribution Manager Window, select `Andrdoid Mode` and install it.
 
 You need to activate Developer options on your phone by going into the parameters, then the About Phone section, and tap "Build number" 7 times.
 
-![Screenshot of the Android tab](./images/screen3.png)
+![Screenshot of the phone screen](./images/screen3.png)
 
 Then, connect your phone via USB to your computer. Finally, you can go in Developer options in the parameters and enable USB debugging.
 
@@ -30,6 +30,10 @@ On the menu bar, click on Android and make sure `App`is selected, and your phone
 
 ![Screenshot of the Android tab](./images/screen4.png)
 
+You will also you need to download the `oscP5` library : in the menu bar, click on *Sketch* > *Import Library...* > *Add Library* > Search for oscP5 and click Install.
+
+![Screenshot of the library manager window](./images/screen5.png)
+
 
 ## OSC Controller Template
 
@@ -37,7 +41,7 @@ On the menu bar, click on Android and make sure `App`is selected, and your phone
 
 In the `osc_controller_template_android` folder, you can find the main processing sketch, and several tabs of the sketch.
 
-![Screenshot of the Processing tabs](./images/screen5.png)
+![Screenshot of the Processing tabs](./images/screen6.png)
 
 You don't need to change anything in these tabs : 
 * `auto_discovery` allows the android app to find the processing receiver on the computer,
@@ -46,5 +50,3 @@ You don't need to change anything in these tabs :
 * `gui_classes` creates each graphic components, 
 * `osc_messaging` sends the osc messages, 
 * `pd_parser` scans PureData patches to find and create components.
-
-If you run the sketch as it is, it will create an application on your phone, with three tabs : Settings, Sensors, and Test.
