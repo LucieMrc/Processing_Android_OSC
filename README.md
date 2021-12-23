@@ -14,7 +14,7 @@ To do so, click on the Java Mode in the top right corner of the Processing windo
 
 ![Screenshot of the Contribution Manager window](./images/screen2.png)
 
-In the Contribution Manager Window, select `Andrdoid Mode` and install it.
+In the Contribution Manager Window, select `Android Mode` and install it.
 
 ### Setting up your phone
 
@@ -26,11 +26,11 @@ Then, connect your phone via USB to your computer. Finally, you can go in Develo
 
 ### Back to Processing
 
-On the menu bar, click on Android and make sure `App`is selected, and your phone is selected in the `Devices` tab.
+On the menu bar, click on Android and make sure `App` is selected, and your phone is selected in the `Devices` tab.
 
 ![Screenshot of the Android tab](./images/screen4.png)
 
-You will also you need to download the `oscP5` library : in the menu bar, click on *Sketch* > *Import Library...* > *Add Library* > Search for oscP5 and click Install.
+You will also you need to download the **oscP5** library : in the menu bar, click on *Sketch* > *Import Library...* > *Add Library* > Search for oscP5 and click Install.
 
 ![Screenshot of the library manager window](./images/screen5.png)
 
@@ -50,3 +50,51 @@ You don't need to change anything in these tabs :
 * `gui_classes` creates each graphic components, 
 * `osc_messaging` sends the osc messages, 
 * `pd_parser` scans PureData patches to find and create components.
+
+### Pages
+
+You can modify the code of the main sketch starting with the line 13 : the array `pages` allows you to store the pages that will appear on your android app. 
+
+![Screenshot of the lines 12-22](./images/screen7.png)
+
+The `Settings` page will allow you to connect your phone to your computer via OSC and chose the OSC client you will send data to.
+
+The `Sensors` page will allow you to chose which datas from your phone sensors (mic, light, accelerometer and orientation) to send.
+
+The `Test` page is created after the `Test.pd` PureData patch in the data folder : by opening the patch in PureData and changing its components, you change the page in your application.
+
+![Screenshot of the Test page on the phone and the PureData patch](./images/screen8.png)
+*Comparison of the Test page on the app and on the PureData patch.*
+
+### Getting started with PureData interface
+
+To edit the patch, switch to edit mode with ctrl+E. 
+
+You can add button (as bang), toggle, sliders, radio buttons, touch surface and color selector surface (as canvas), by going to the menu bar > Add.
+
+![Screenshot of the PureData add menu](./images/screen9.png)
+
+With right-click > Properties, you can change the label and size of the component. 
+
+![Screenshot of the PureData patch](./images/screen10.png)
+
+For a **toggle**, you can modify the value if switched on (1 by default).
+
+For a **slider**, you can modify its starting and ending value (0 to 127 by default). 
+
+For a **radio button**, you can modify the amount of boxes.
+
+You can label them as you want, but in order to create a touch surface canvas or a color selector surface, you need to add the mention "touch" or "color" in `Receive symbol`.
+
+You can therefore create as many pages based on PureData patch, by adding their name to the `pages` array, and adding the patch in the data folder.
+
+In the sketch, the pages are created from the patches by the lines 52 to 55 :
+
+![Screenshot of the lines 51-56](./images/screen11.png)
+
+If you don't need the Sensors page, you can take it off the `pages` array and change the line 52 from `int i = 2` to `int i = 1`.
+
+### Customisation 
+
+![Screenshot of the lines 51-56](./images/screen11.png)
+
