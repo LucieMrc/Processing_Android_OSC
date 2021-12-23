@@ -128,6 +128,19 @@ The lines 16 to 24 are the declarations of the variables we want to get from the
 
 ![Screenshot of the lines 16-24](./images/screen16.png)
 
-The function `draw`, lines 37 to 59, we represent the 
+The function `draw`, lines 37 to 59, we use the variables we declared to show the data we receive in real time.
 
 ![Screenshot of the lines 37-59](./images/screen17.png)
+
+The function `oscEvent`, lines 66 to 144, retrieves the data sent via OSC and analyze them to get the values from the component.
+
+For example, for the button, it checks if the label in the osc message is the one we set for the button, then it updates `backColor` with a random color.
+
+![Screenshot of the lines 87-92](./images/screen18.png)
+
+For sliders, it checks for the label, and update the value `hsl1` with the value of the slider, with `get(0)`.
+
+![Screenshot of the lines 102-106](./images/screen19.png)
+
+Another example with the touch surface : it checks for the label, and then update `w` with the first value (the x position on the surface) with `get(0)`, and update `h` with the second value (the y position on the surface) with `get(1)`.
+![Screenshot of the lines 126-131](./images/screen20.png)
