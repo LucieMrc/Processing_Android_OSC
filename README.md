@@ -106,3 +106,28 @@ You can change differents visuals settings in the lines 15 to 22.
 
 ![Screenshot of the lines 51-56](./images/screen13.png)
 
+## OSC Receiver
+
+### OSC connection
+
+First, you can open the sketch `simple_receiver`. When you run the sketch and the android app at the same time, both devices connected on the same wifi, you can press Scan on the Settings page, and the OSC client should appear. 
+
+![Screenshot of the settings page](./images/screen14.png)
+
+You can then press Connect, and your devices should be able to communicate via OSC.
+
+If you go on the Test page, you can now interact in real time with the processing sketch.
+
+![Screenshot of the settings page](./images/screen15.png)
+
+Your android app is communicating via OSC with your processing sketch.
+
+### Understanding the sketch
+
+The lines 16 to 24 are the declarations of the variables we want to get from the app :
+
+![Screenshot of the lines 16-24](./images/screen16.png)
+
+The function `draw`, lines 37 to 59, we represent the 
+
+![Screenshot of the lines 37-59](./images/screen17.png)
