@@ -144,3 +144,7 @@ For sliders, it checks for the label, and update the value `hsl1` with the value
 
 Another example with the touch surface : it checks for the label, and then update `w` with the first value (the x position on the surface) with `get(0)`, and update `h` with the second value (the y position on the surface) with `get(1)`.
 ![Screenshot of the lines 126-131](./images/screen20.png)
+
+## Simple receiver and simple controller
+
+If you open both the `simple_sketch_controller` (as an android app), and the `simple_sketch_receiver` (as a sketch on your computer), you can use the touch surface to move a circle on the sketch, and control its color with the color surface.

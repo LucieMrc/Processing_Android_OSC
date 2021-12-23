@@ -10,7 +10,7 @@ int outPort = 10000;
 String ip = "127.0.0.1";
 
 // Change the following line to add your controllers
-String[] pages = {"Settings", "Sensors", "Test"}; //name of the pd patch to use as layout
+String[] pages = {"Settings", "Sensors", "simple"}; //name of the pd patch to use as layout
 
 // customisation stuff
 PFont font ; // needs to loaded it in the setup below
