@@ -86,15 +86,23 @@ For a **radio button**, you can modify the amount of boxes.
 
 You can label them as you want, but in order to create a touch surface canvas or a color selector surface, you need to add the mention "touch" or "color" in `Receive symbol`.
 
+### Adding pages
+
 You can therefore create as many pages based on PureData patch, by adding their name to the `pages` array, and adding the patch in the data folder.
 
 In the sketch, the pages are created from the patches by the lines 52 to 55 :
 
 ![Screenshot of the lines 51-56](./images/screen11.png)
 
-If you don't need the Sensors page, you can take it off the `pages` array and change the line 52 from `int i = 2` to `int i = 1`.
+### Removing the Sensors page
+
+If you don't need the Sensors page, you can take it off the `pages` array and change the line 52 from `int i = 2` to `int i = 1`, and comment the function `create_sensorTab();` from line 59.
+
+![Screenshot of the lines 56-60](./images/screen12.png)
 
 ### Customisation 
 
-![Screenshot of the lines 51-56](./images/screen11.png)
+You can change differents visuals settings in the lines 15 to 22. 
+
+![Screenshot of the lines 51-56](./images/screen13.png)
 
