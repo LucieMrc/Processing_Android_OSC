@@ -10,7 +10,7 @@ int outPort = 10000;
 String ip = "127.0.0.1";
 
 // Change the following line to add your controllers
-String[] pages = {"Settings", "Sensors", "simple"}; //name of the pd patch to use as layout
+String[] pages = {"Settings", "simple"}; //name of the pd patch to use as layout
 
 // customisation stuff
 PFont font ; // needs to loaded it in the setup below
@@ -49,14 +49,14 @@ void setup() {
   g = new GUI(eltHeight, pages);
 
   // add tab for each pd patch and populate it
-  for (int i = 2; i < pages.length; i ++) { 
+  for (int i = 1 ; i < pages.length; i ++) { 
     String[] patch = loadStrings(pages[i] +".pd");
     // populate the tab with gui elements
     parse_patch(patch, i);
   }
 
   create_settings();
-  create_sensorTab();
+  //create_sensorTab();
 }
 
 
@@ -66,11 +66,6 @@ void draw() {
 
   if (AUTO_DISCOVERY) auto_discovery();
 
-  if (g.tabs.value == 1) {
-    stroke(cGuifront);
-    draw_sensors();
-    update_sensors();
-  }
 }
 
 void keyReleased() {

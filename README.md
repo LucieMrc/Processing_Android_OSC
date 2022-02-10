@@ -2,7 +2,7 @@
 
 The goal is to use OSC communication to send data from an android phone to a Processing sketch.
 
-## Getting started
+## Getting started on Mac
 
 ### Installing Android Mode
 
@@ -148,3 +148,19 @@ Another example with the touch surface : it checks for the label, and then updat
 ## Simple receiver and simple controller
 
 If you open both the `simple_sketch_controller` (as an android app), and the `simple_sketch_receiver` (as a sketch on your computer), you can use the touch surface to move a circle on the sketch, and control its color with the color surface.
+
+#
+# Using Open Stage Control to communicate via OSC
+
+The goal is to use OSC communication to send data to a Processing sketch via an Open Stage Control interface in a web browser.
+
+## Getting started
+
+Download [Open Stage Control](http://openstagecontrol.ammd.net/download/) and open the application.
+
+The first window you encounter is the launcher window.
+If you click on the `play` button, you can see the local adress where you can find your interface on the web server.
+
+![Screenshot of the launcher](./images/screen21.png)
+
+At the same time, the client window opens.
