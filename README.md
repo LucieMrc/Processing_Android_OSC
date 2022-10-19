@@ -1,6 +1,6 @@
 # Using Processing Android to communicate via OSC
 
-The goal is to use OSC communication to send data from an android phone to a Processing sketch.
+**The goal is to use OSC communication to send data from an android phone to a Processing sketch.**
 
 ## Getting started on Mac
 
