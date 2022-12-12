@@ -2,6 +2,8 @@
 
 **The goal is to use OSC communication to send data from an android phone to a Processing sketch.**
 
+All of the code and the ideas are from the french creative coding master [b2renger](https://github.com/b2renger), from his repo [processing_osc_controller](https://github.com/b2renger/processing_osc_controller).
+
 ## Getting started on Mac
 
 ### Installing Android Mode
@@ -163,4 +165,4 @@ If you click on the `play` button, you can see the local adress where you can fi
 
 ![Screenshot of the launcher](./images/screen21.png)
 
-At the same time, the client window opens.
+At the same time, the client window opens....
