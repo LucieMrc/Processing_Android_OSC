@@ -2,7 +2,7 @@
 
 **The goal is to use OSC communication to send data from an android phone to a Processing sketch.**
 
-All of the code and the ideas are from the french creative coding master [b2renger](https://github.com/b2renger), from his repo [processing_osc_controller](https://github.com/b2renger/processing_osc_controller).
+All of the code and the ideas are from the french creative coding master [b2renger](https://github.com/b2renger), from his repo [processing_osc_controller](https://github.com/b2renger/processing_osc_controller). My only contribution is the explaination of the code and the setup.
 
 ## Getting started on Mac
 
